@@ -31,5 +31,3 @@ create table if not exists complex (
     primary key (id),
     unique(service_name, section_name, graph_name)
 );
-
-insert into metrics(service_name,section_name,graph_name) values('foo','bar','baz');
