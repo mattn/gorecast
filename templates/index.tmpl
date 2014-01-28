@@ -1,0 +1,25 @@
+<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="/">Gorecast</a>
+    </div>
+  </div>
+</div>    
+<div id="wrap">
+  <div class="container">
+    <div class="content">
+      <div class="wrapper">
+        <div class="proper-content">
+          <div class="row">
+            <div class="span12">
+            {{range .metrics}}
+			<h2><a href="#">{{.ServiceName}}</a></h2>
+            <img src="image/{{.ServiceName}}/{{.SectionName}}/{{.GraphName}}.png">
+            {{end}}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
